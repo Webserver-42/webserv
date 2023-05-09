@@ -501,7 +501,7 @@ Request RequestParser::startLineHeaderLineParsing(Tokens &tokens)
 {
 //   Request requestNew;
 
-//   request = requestNew;	//TODO: check
+  request = Request();	//TODO: check
   try
   {
     previousErrorCheck(tokens);

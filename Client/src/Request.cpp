@@ -3,7 +3,7 @@
 Request::Request()
 : chunked(false), keepAlive(true)
 {
-
+    
 }
 
 Request::MethodType Request::getMethod() const {
