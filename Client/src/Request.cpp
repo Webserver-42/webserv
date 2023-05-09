@@ -166,3 +166,25 @@ Request::ContentType Request::getContentType() const
 {
     return contentType;
 }
+
+void Request::requestInitialize()
+{
+    method = "";
+    uriPath = "";
+    queryString = "";
+    queryStringMap.empty();
+    httpVersion = "";
+    headerFields.empty();
+    host = "";
+    port = "";
+    transferEncoding.empty();
+    chunked = false;
+    keepAlive = true;    
+    contentLength = 0;
+    contentType = "";
+    cookie.empty();
+    cookieString = "";
+    multipartFormDataId = "";
+    body = "";
+    errorCode = "";
+}

@@ -82,6 +82,7 @@ class Request
 		void setKeepAlive(bool chunked);
 		void setMultipartFormDataId(MultipartFormDataIdType multipartFormDataId);
 		void setQueryStringMap(std::string key, std::string value);
+		void requestInitialize();
 	
 };
 

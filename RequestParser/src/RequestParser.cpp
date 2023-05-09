@@ -501,7 +501,8 @@ Request RequestParser::startLineHeaderLineParsing(Tokens &tokens)
 {
 //   Request requestNew;
 
-  request = Request();	//TODO: check
+  // request = Request();	//TODO: check
+  request.requestInitialize();
   try
   {
     previousErrorCheck(tokens);
@@ -531,3 +532,4 @@ Request RequestParser::bodyLineParsing(Tokens &tokens, Request &inputRequest)
 
   return request;
 }
+
